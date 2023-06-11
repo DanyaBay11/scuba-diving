@@ -1,0 +1,207 @@
+.package {
+  height: 1024px;
+  background-color: #071028;
+}
+
+.package-above__content {
+  position: relative;
+  bottom: 150px;
+}
+
+.package-above__content-card {
+  position: relative;
+}
+
+.package-above__content-card h2 {
+  letter-spacing: 5px;
+  font-size: 24px;
+  font-family: 'Inter', sans-serif;
+  text-decoration: none;
+  color: #ffffff;
+  margin-left: 30px;
+  font-weight: 5;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 10px;
+}
+
+.package-above__card-1 {
+  width: 260px;
+  height: 308px;
+  background-image: url('../img/card_img_1.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.package-above__card-2 {
+  width: 260px;
+  height: 308px;
+  background-image: url('../img/card_img_2.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.package-above__card-3 {
+  width: 260px;
+  height: 308px;
+  background-image: url('../img/card_img_3.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.package-above__card-4 {
+  width: 260px;
+  height: 308px;
+  background-image: url('../img/card_img_4.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* -------------animation------------------ */
+.card-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  opacity: 0;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  letter-spacing: 2px;
+  padding: 0 20px;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.package-above__card-1:hover .card-overlay,
+.package-above__card-2:hover .card-overlay,
+.package-above__card-3:hover .card-overlay,
+.package-above__card-4:hover .card-overlay {
+  background-color: #07102881;
+  opacity: 1;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.package-above__content-card:hover h2 {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* ------------------------------- */
+
+.package__content-title h2 {
+  letter-spacing: 4px;
+  font-weight: 1;
+  text-align: center;
+  font-family: 'Cormorant', serif;
+  font-size: 70px;
+  color: #ffffff;
+  margin-bottom: 60px;
+}
+
+.package__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+  width: 360px;
+  height: 512px;
+  /* border: 1px solid #ffff; */
+}
+
+.package__card-img img {
+  width: 130px;
+  height: 130px;
+  margin-bottom: 40px;
+}
+
+.package__card-title h3 {
+  color: #69C9E3;
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-weight: 1;
+  letter-spacing: 4px;
+  margin-bottom: 40px;
+}
+
+.package__card-paragraph {
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  letter-spacing: 2px;
+  padding: 0 40px;
+  line-height: 25px;
+  margin-bottom: 50px;
+}
+
+.package__card-btn a {
+  text-decoration: none;
+  border: 1px solid #ffffff;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+/* Adjustments for smaller screens */
+
+@media screen and (max-width: 750px) {
+    .package {
+        height: auto;
+        background-color: #071028;
+        
+    }
+    .package-above__content {
+        bottom: 100px; /* Decrease the distance from the bottom */
+    }
+
+    .package-above__content-card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .package-above__content-card h2 {
+        font-size: 16px; /* Decrease the font size of card headings */
+        margin-left: 15px; /* Decrease the left margin of card headings */
+    }
+
+    .package__content-title h2 {
+        font-size: 40px; /* Decrease the font size of the main title */
+        margin-bottom: 40px;
+    }
+
+    .package__card {
+        width: 260px; /* Decrease the width of package cards */
+        height: 380px; /* Decrease the height of package cards */
+    }
+
+    .package__card-img img {
+        width: 100px; /* Decrease the size of package card images */
+        height: 100px;
+        margin-bottom: 20px; /* Decrease the bottom margin of package card images */
+    }
+
+    .package__card-title h3 {
+        font-size: 18px; /* Decrease the font size of package card titles */
+        margin-bottom: 20px; /* Decrease the bottom margin of package card titles */
+    }
+
+    .package__card-paragraph {
+        font-size: 12px; /* Decrease the font size of package card paragraphs */
+        padding: 0 20px; /* Decrease the horizontal padding of package card paragraphs */
+        line-height: 20px; /* Decrease the line height of package card paragraphs */
+        margin-bottom: 30px; /* Decrease the bottom margin of package card paragraphs */
+    }
+
+    .package__card-btn a {
+        padding: 8px 16px; /* Decrease the padding of package card buttons */
+        font-size: 12px; /* Decrease the font size of package card buttons */
+
+    }
+}
+
+
+.package__card {
+  justify-content: center; /* Center the content vertically */
+  text-align: center; /* Center the content horizontally */
+}
